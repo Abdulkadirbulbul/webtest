@@ -60,6 +60,7 @@ if(len(metin)!=0):
 ## Sunucuda çalıştırmak için 
 Eğer kodunuzu sunucuda her 10 dakika da bir çalıştırmak istiyorsanız bunun için Ubuntu sunucunuzun olması  ve içerisinde pythonun kurulu olması gerekir.
 Eğer bu ikisi tamamsa yerinizi alın :)
+
 **Adım 1** 
 
 ```sh: 
@@ -76,6 +77,7 @@ crontab -e
 # 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
 
 ```
+
 **Adım 2**
 > En alt kısma bir komut satırı ekliyoruz.
 ```sh:
@@ -126,6 +128,7 @@ print("mail sent")
 > In the specified sections, you must enter the information of the recipient mail account, sender mail account and your own mail server. If not, you can disable the function.
 
 **Step 3**
+
 `` python:
 # SEND MESSAGE FUNCTION TO DISCORD BOTA
 def discord_gonder(text):
