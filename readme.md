@@ -142,7 +142,7 @@ print(response.text)
 > Here, you just need to write your discord webhook url to the variable that says webhook_url.
 
 **Step 4**
-`` python:
+```python:
 if(len(text)!=0):
 mail_gonder(text)
 discord_gonder(text)
@@ -155,12 +155,12 @@ If you want to run your code on the server every 10 minutes, you must have Ubunt
 If these two are ok, take your place :)
 **Step 1**
 
-``sh:
+```sh:
 crontab -e
 ```
 > and the screen should look like this.
 
-``sh:
+```sh:
   Edit this file to introduce tasks to be run by cron.
 # Output of the crontab jobs (including errors) is sent through
 # email to the user the crontab file belongs to (unless redirected).
@@ -171,7 +171,7 @@ crontab -e
 ```
 **Step 2**
 > Add a command line at the bottom.
-``sh:
+```sh:
 */10 * * * * python3 /home/ubuntu/python/mailtest/run.py
 ```
 > we write this and press CTRL+X , then Y , finally ENTER.
