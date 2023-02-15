@@ -97,7 +97,7 @@ It does not have any interface.
 There are 2 different working files.
 ## single_run.py
 If your url number is low and it should be added to the array named **my_sites** in the **single_run.py** file.
-`` python:
+```python:
 my_sites=["https://www.kadirbulbul.com"]
 ```
 If you have many urls and you want to keep them in a txt file, then you can add your websites to the sites.txt file.
@@ -107,7 +107,7 @@ If you have many urls and you want to keep them in a txt file, then you can add 
 > After adding sites.txt to your sites, open the run.py file.
 
 **Step 2**
-`` python:
+```python:
 # SEND MAIL FUNCTION
 def mail_gonder(text):
 sender = "sender_mail"
@@ -129,7 +129,7 @@ print("mail sent")
 
 **Step 3**
 
-`` python:
+``` python:
 # SEND MESSAGE FUNCTION TO DISCORD BOTA
 def discord_gonder(text):
 #Define webhook URL here
